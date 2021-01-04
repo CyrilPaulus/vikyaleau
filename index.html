@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Dodo avant la Dordogne</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-text">
+        <h1 id="counter">Encore 1000000000 dodos avant la Dordogne...</h1>
+    </div>
+</body>
+
+<script>
+    function refresh() {
+        var now = new Date();
+        var targetDate = new Date(2021, 6, 17);
+        var dayLefts = Math.ceil((targetDate - now) / (1000 * 60 * 60 * 24));;
+        var counter = document.getElementById("counter");
+        var text = "";
+        if (dayLefts <= 0)
+            text = "On est en Dordogne bande de naze !";
+        else
+            text = "Encore " + dayLefts + " dodos avant la Dordogne ! 😴";
+        counter.innerHTML = text;
+        document.title = text;
+    }
+    refresh();
+    setTimeout(() => {
+        refresh();
+    }, 100);
+
+</script>
+
+
+</html>

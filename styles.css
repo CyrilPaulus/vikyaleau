@@ -1,0 +1,13 @@
+html {
+    background-image: url(sleeping.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e8f7fa;
+}
+
+.main-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 30vh;
+    font-family: Bradley Hand, cursive;
+}
